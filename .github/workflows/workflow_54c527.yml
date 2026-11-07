@@ -1,0 +1,12 @@
+name: Build and Test
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  execute-stage:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup environment
+        run: echo "ok"
